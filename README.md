@@ -1,2 +1,3 @@
-# stopwatch
-Simple stopwatch created with React.
+# Stopwatch
+
+Simple stopwatch app.
