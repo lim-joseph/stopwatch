@@ -1,3 +1,7 @@
 # Stopwatch
 
-Simple stopwatch app.
+Simple stopwatch app
+
+-   Typescript
+-   Formik
+-   Chakra UI
