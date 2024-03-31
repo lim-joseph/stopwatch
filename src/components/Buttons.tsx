@@ -11,35 +11,23 @@ export default function Buttons({
 	setTime,
 	isTimerActive,
 }: ButtonsProps) {
-	const onStartClick = () => {
-		setIsTimerActive(true);
-	};
-
-	const onStopClick = () => {
-		setIsTimerActive(false);
-	};
-
-	const onClearClick = () => {
-		setTime(0);
-	};
-
 	return (
 		<ButtonGroup spacing={"1rem"}>
 			<Button
 				colorScheme="green"
-				onClick={onStartClick}
+				onClick={() => setIsTimerActive(true)}
 				isDisabled={!!isTimerActive}
 			>
 				Start
 			</Button>
 			<Button
 				colorScheme="red"
-				onClick={onStopClick}
+				onClick={() => setIsTimerActive(false)}
 				isDisabled={!isTimerActive}
 			>
 				Stop
 			</Button>
-			<Button onClick={onClearClick}>Clear</Button>
+			<Button onClick={() => setTime(0)}>Clear</Button>
 		</ButtonGroup>
 	);
 }
