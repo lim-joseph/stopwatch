@@ -3,7 +3,7 @@ import { Button, ButtonGroup } from "@chakra-ui/react";
 interface ButtonsProps {
 	setIsTimerActive: (isTimerActive: boolean) => void;
 	setTime: (time: number) => void;
-	isTimerActive: Boolean;
+	isTimerActive: boolean;
 }
 
 export default function Buttons({

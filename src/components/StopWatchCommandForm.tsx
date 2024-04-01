@@ -13,8 +13,8 @@ interface FormikTypes {
 }
 
 interface StopWatchCommandFormProps {
-	setIsTimerActive: (isTimerActive: Boolean) => void;
-	isTimerActive: Boolean;
+	setIsTimerActive: (isTimerActive: boolean) => void;
+	isTimerActive: boolean;
 	setTime: (time: number) => void;
 }
 
